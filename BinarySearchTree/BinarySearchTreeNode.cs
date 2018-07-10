@@ -15,8 +15,8 @@ namespace BinarySearchTree
         public BinarySearchTreeNode(T value)
         {
             this.value = value;
-            LeftChild = null;
-            RightChild = null;
+            leftChild = null;
+            rightChild = null;
         }
     }
 }
