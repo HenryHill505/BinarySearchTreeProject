@@ -49,5 +49,32 @@ namespace BinarySearchTree
                 }
             }
         }
+        public bool Search(T searchValue)
+        {
+            BinarySearchTreeNode<T> currentNode = rootNode;
+
+            while (true)
+            {
+                if (searchValue.CompareTo(currentNode.value) == 0)
+                {
+                    //Value found
+                    return true;
+                }
+                else if (searchValue.CompareTo(currentNode.value) < 0)
+                {
+                    //Go left
+                    currentNode = currentNode.leftChild;
+                }
+                else
+                {
+                    //Go right
+                    currentNode = currentNode.rightChild;
+                }
+                if (currentNode == null)
+                {
+                    return false;
+                }
+            }
+        }
     }
 }
