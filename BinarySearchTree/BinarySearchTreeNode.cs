@@ -8,8 +8,8 @@ namespace BinarySearchTree
 {
     class BinarySearchTreeNode<T>
     {
-        public BinarySearchTreeNode<T> LeftChild;
-        public BinarySearchTreeNode<T> RightChild;
+        public BinarySearchTreeNode<T> leftChild;
+        public BinarySearchTreeNode<T> rightChild;
         public T value;
 
         public BinarySearchTreeNode(T value)
