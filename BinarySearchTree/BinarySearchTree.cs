@@ -23,7 +23,6 @@ namespace BinarySearchTree
             {
                 if (valueToAdd.CompareTo(currentNode.value) < 0)
                 {
-                    //Value goes left
                     if (currentNode.leftChild == null)
                     {
                         currentNode.leftChild = new BinarySearchTreeNode<T>(valueToAdd);
@@ -36,7 +35,6 @@ namespace BinarySearchTree
                 }
                 else
                 {
-                    //Value goes right
                     if (currentNode.rightChild == null)
                     {
                         currentNode.rightChild = new BinarySearchTreeNode<T>(valueToAdd);
@@ -57,17 +55,14 @@ namespace BinarySearchTree
             {
                 if (searchValue.CompareTo(currentNode.value) == 0)
                 {
-                    //Value found
                     return true;
                 }
                 else if (searchValue.CompareTo(currentNode.value) < 0)
                 {
-                    //Go left
                     currentNode = currentNode.leftChild;
                 }
                 else
                 {
-                    //Go right
                     currentNode = currentNode.rightChild;
                 }
                 if (currentNode == null)
